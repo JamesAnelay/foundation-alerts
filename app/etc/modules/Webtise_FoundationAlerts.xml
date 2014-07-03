@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webtise_FoundationAlerts>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core/>
+
+            </depends>
+        </Webtise_FoundationAlerts>
+    </modules>
+</config>

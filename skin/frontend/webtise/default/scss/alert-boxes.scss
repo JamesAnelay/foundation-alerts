@@ -1,0 +1,6 @@
+@import '../bower_components/foundation/scss/foundation/components/alert-boxes';
+
+//decided not to remove -msg and use defaults but rather use the mixins on our default classes
+.success-msg{ @include alert-style($success-color); }
+.error-msg,.warning-msg{ @include alert-style($alert-color); }
+.notice-msg { @include alert-style($info-color); }

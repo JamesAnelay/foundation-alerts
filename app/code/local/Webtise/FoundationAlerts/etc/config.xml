@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webtise_FoundationAlerts>
+            <version>0.1.0</version>
+        </Webtise_FoundationAlerts>
+    </modules>
+
+    <global>
+        <blocks>
+            <webtise_foundationalerts>
+                <class>Webtise_FoundationAlerts_Block</class>
+            </webtise_foundationalerts>
+
+            <!-- As we only want a frontend re-write this has now been done in the observer -->
+            <!--core>
+                <rewrite>
+                    <messages>Webtise_FoundationAlerts_Block_Core_Messages</messages>
+                </rewrite>
+            </core>-->
+
+        </blocks>
+
+        <helpers>
+            <webtise_foundationalerts>
+                <class>Webtise_FoundationAlerts_Helper</class>
+            </webtise_foundationalerts>
+        </helpers>
+
+        <models>
+            <webtise_foundationalerts>
+                <class>Webtise_FoundationAlerts_Model</class>
+            </webtise_foundationalerts>
+        </models>
+
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <webtise_foundationalerts>
+                        <type>model</type>
+                        <class>webtise_foundationalerts/observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </webtise_foundationalerts>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </frontend>
+</config>
