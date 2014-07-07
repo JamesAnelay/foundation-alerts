@@ -1,0 +1,14 @@
+<?php $types = $this->getMessageTypes(); ?>
+<?php $i = 0;?>
+
+<?php foreach ($types as $type) :?>
+    <?php if ( $messages = $this->getMessages($type) ) :?>
+        <div data-alert class="alert-box <?php echo $type; ?>-msg">
+            <?php foreach ( $messages as $message ) :?>
+                <p><?php echo ($this->_escapeMessageFlag) ? $this->escapeHtml($message->getText()) : $message->getText(); ?></p>
+                <?php $i++;?>
+            <?php endforeach;?>
+            <a href="#" class="close">&times;</a>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>
