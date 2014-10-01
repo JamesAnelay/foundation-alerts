@@ -1,0 +1,4 @@
+app/code/local/Webtise/FoundationAlerts app/code/local/Webtise/FoundationAlerts
+app/design/frontend/base/default/tempplate/webtise/foundation   app/design/frontend/base/default/tempplate/webtise/foundation
+app/etc/modules/Webtise_FoundationAlerts.xml    app/etc/modules/Webtise_FoundationAlerts.xml
+skin/frontend/webtise/default/scss/alert-boxes.scss skin/frontend/webtise/default/scss/alert-boxes.scss
