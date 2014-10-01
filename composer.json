@@ -1,0 +1,14 @@
+{
+    "name":"webtise/foundation-alerts",
+    "type":"magento-module",
+    "description":"Adds a template file to Magento Alerts so that the html can be easily edited and then updates the html to be more similar to foundation's"
+    "authors":[
+        {
+            "name": "James Anelay",
+            "email": "jamesanelay@webtise.com"
+        }
+    ],
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
